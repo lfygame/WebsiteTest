@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-* { font-family: 'Ubuntu', sans-serif; font-weight: 400; }
+* { font-family: 'Ubuntu', sans-serif; font-weight: 400; position: relative; }
 header { display: block; }
 header nav ul li:hover { padding-top: 4px; }
 html,body { height: 100%; margin: 0; padding: 0; text-align: center; background-color: #2f6e98; }
 ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #56a5da; height: 45px; }
 ul img { height: 50px; width: 50px; float: left; padding-right: 10px; padding-left: 15px; }
 li { transition: all 300ms; -moz-transition: all 300ms; -webkit-transition: all 300ms; float: left; }
-nav { -webkit-box-shadow: 0px 1px 32px 1px rgba(0,0,0,0.47); -moz-box-shadow: 0px 1px 32px 1px rgba(0,0,0,0.47); box-shadow: 0px 1px 32px 1px rgba(0,0,0,0.47); }
+nav { z-index: 1000; -webkit-box-shadow: 0px 1px 32px 1px rgba(0,0,0,0.47); -moz-box-shadow: 0px 1px 32px 1px rgba(0,0,0,0.47); box-shadow: 0px 1px 32px 1px rgba(0,0,0,0.47); }
 li a { display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
 section { min-height: 100%; }
 h1 { color: white; padding-top: 8%; margin-bottom: 5px; margin-top: 0px; text-transform: uppercase; font-weight: 600; font-size: 50px;}
-h3 { margin-bottom: 0px; }
+h3 { margin-bottom: 0px; color: white; }
 hr { width: 30px; height: 2px; background: white; border: 0; margin: 0px auto 40px auto; }
 
+#intro { background: #21201e; height: 100%; min-height: 400px; position: fixed; top: 0; left: 0; width: 100%; }
+#intro .intro-bg-2 { position: absolute; top: 0px; right: 0px; left: 0px; bottom: 0px; border: none;
+background: url(https://wallpaperscraft.com/image/star_art_sky_night_people_silhouette_98142_1920x1080.jpg) center; background-size: cover; -webkit-box-shadow: inset 0px 0px 500px 0px rgba(0, 0, 0, 0.5); -webkit-transform: scale(1.05); -webkit-animation: 2s fadeIn  9s, 9s growSlow 9s; -webkit-animation-fill-mode: backwards; box-shadow: inset 0px 0px 500px 0px rgba(0, 0, 0, 0.5); transform: scale(1.05); animation: 2s fadeIn  9s, 9s growSlow 9s; animation-fill-mode: backwards; }
 
-.welcome { padding-top: 300px; }
-#home h1 { font-size: 65px; }
-
-
+.welcome  { padding-top: 250px; }
+#home  h1 { font-size: 65px; }
 #home     { background-color: #2ecc71; }
 #work     { background-color: #27ae60; }
 #about    { background-color: #1abc9c; }
